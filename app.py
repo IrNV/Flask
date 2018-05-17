@@ -1,15 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
 @app.route("/")
 def main_page():
-    return "Hello World!"
+    return render_template("index.html")
 
 
 @app.route("/user")
 def user_page():
-    return "Hello user!"
+    user = "Admin"
+    return render_template("user.html", name=user)
 
 
 @app.route("/about")
