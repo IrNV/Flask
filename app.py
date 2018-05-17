@@ -7,10 +7,10 @@ def main_page():
     return render_template("index.html")
 
 
-@app.route("/user")
-def user_page():
-    user = "Admin"
-    return render_template("user.html", name=user)
+@app.route("/users")
+def users_page():
+    users = ["Admin", "User1", "User2"]
+    return render_template("users.html", users=users)
 
 
 @app.route("/about")
