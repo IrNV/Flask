@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/static/js/test.js"></script>
     <title>Users</title>
+
 </head>
 <body>
 {% for user in users %}
-    <p id="user">{{user}}</p>
+    <p class="user">{{user}}</p>
 {% endfor %}
 </body>
 </html>
