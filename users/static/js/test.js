@@ -4,7 +4,7 @@
 $(document).ready(function () {
     // alert("Page is loaded")
     $( 'body' ).on( 'click', 'img', function () {
-        alert($(this).text())
+        alert($(this).attr("alt"))
         //$.ajax({
         //    type: "GET",
         //    url:"http://127.0.0.1:5000/users/click/"+$(this).text(),
